@@ -1,0 +1,123 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Large",
+                  "weight": "Bolder",
+                  "spacing": "Small",
+                  "text": "Material Details By Id",
+                  "wrap": true
+                }
+              ],
+              "width": "stretch"
+            }
+          ]
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "ExtraLarge",
+                  "text": "${Material}",
+                  "wrap": true
+                }
+              ],
+              "width": "stretch"
+            }
+          ]
+        },
+        {
+          "type": "FactSet",
+          "spacing": "Large",
+          "facts": [
+            {
+              "title": "**Material**",
+              "value": "${Material}"
+            },
+            {
+              "title": "**Avg Consumption**",
+              "value": "${AvgConsumption}"
+            },
+            {
+              "title": "**Predicted Demand**",
+              "value": "${PredictedDemand}"
+            },
+            {
+              "title": "**Lead Time**",
+              "value": "${LeadTime}"
+            },
+            {
+              "title": "**Current Inventory**",
+              "value": "${CurrentInventory}"
+            },
+            {
+              "title": "**Orders In Pipeline**",
+              "value": "${OrdersInPipeline}"
+            },
+            {
+              "title": "**Quantity To Order**",
+              "value": "${QuantityToOrder}"
+            },
+            {
+              "title": "**Reorder Date**",
+              "value": "${Reorderdate}"
+            },
+            {
+              "title": "**Unit Price**",
+              "value": "${UnitPrice}"
+            },
+            {
+              "title": "**Predicted Capex**",
+              "value": "${PredictedCapex}"
+            },
+            {
+              "title": "**Predicted Capex With Harvest**",
+              "value": "${predictedcapexwithharvest}"
+            },
+            {
+              "title": "**Open Harvest Qty**",
+              "value": "${openharvestqty}"
+            },
+            {
+              "title": "**Inventory Capex**",
+              "value": "${InventoryCapex}"
+            },
+            {
+              "title": "**Reorder Point**",
+              "value": "${ReorderPoint}"
+            },
+            {
+              "title": "**Inventory Exhaust Date**",
+              "value": "${InventoryExhaustDate}"
+            }
+            
+          ]
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "fallbackText": "This card requires Adaptive Cards v1.2 support to be rendered properly."
+}
